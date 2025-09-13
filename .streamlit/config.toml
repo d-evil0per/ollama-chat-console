@@ -1,0 +1,36 @@
+# config.toml for Ollama Chat Console
+[theme]
+# Primary and background colors
+primaryColor = "#2badb8"
+backgroundColor = "#F0F2F6"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#000000"
+font = "sans serif"
+
+[server]
+headless = true
+enableCORS = false
+port = 8501
+
+[global]
+# Show hamburger menu and footer
+hideToolbar = false
+hideFooter = false
+
+[runner]
+# Use threading for better responsiveness
+enableWebsocketCompression = true
+
+[browser]
+gatherUsageStats = false
+
+[client]
+# Enable hot reload for development
+runOnSave = true
+
+[logger]
+level = "info"
+
+[mapbox]
+# Optional if you use Pydeck or maps
+token = ""
